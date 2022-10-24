@@ -1,27 +1,44 @@
 .tablero{
     width: 600px;
-    height: 600px;
-    border: 2px solid yellow;
+    height: 700px;
+    border: 2px solid red;
     margin: 0 auto;
     background-color: black;
-    background-image: url("../IMG/espacioInfinito.png");
+    background-image: url("../IMG/espacioAmarillo.jpg");
     background-size: cover;
-    /*background-repeat: no-repeat;*/
     position: relative;
-    animation: moverfondo 30s linear infinite ;
+    animation: moverfondo 8s linear infinite ;
     display: flex;
     flex-wrap: wrap;
 }
 .tablero div{
-    width: 40px;
-    height: 40px;
+    width: 54px;
+    height: 54px;
 }
 
 .nave1{
-    background-image: url("../IMG/nave2.png");
+    background-image: url("../IMG/superNave.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+}
+
+.aliens{
+    background-image: url("../IMG/naveEspacial.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.laser{
+    background-image: url("../IMG/laser.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.explosion{
+    background-image: url("../IMG/explosion2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*animacion mover fondo*/
 @keyframes moverfondo {
@@ -29,6 +46,6 @@
         background-position: 0 0;
     }
     100%{
-        background-position: 0 600px;
+        background-position: 0 700px;
     }
 }
